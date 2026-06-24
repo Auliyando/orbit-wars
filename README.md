@@ -37,7 +37,7 @@ The agent transforms its static chromosome coefficients ($\alpha, \beta, \gamma$
 
 * **Fortress Penalty Vector ($w_{ns}$):** Controls aversion to heavily fortified defense garrisons, shifting the bot into an aggressive *Juggernaut* state when dominating.
 
-* **Fleet Deployment Proportional Pooling ($pool_perc$):** Restricts or siphons launch volumes from secondary bases based on multi-faction threat scaling.
+* **Fleet Deployment Proportional Pooling ($pool_{perc}$):** Restricts or siphons launch volumes from secondary bases based on multi-faction threat scaling.
 
 ---
 
