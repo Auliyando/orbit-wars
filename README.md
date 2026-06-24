@@ -13,15 +13,15 @@ orbit-wars/
 │   └── bayessian.py            # Bayesian optimization workflows
 ├── submission/                 # Evolutionary agent iterations
 │   ├── AIS_1.0.py              # Baseline AI agent
-│   ├── AIS_2.0.py - 2.1.py     # Rule-based enhancements
-│   ├── AIS_3.0.py              # Intermediate strategy shift
-│   ├── AIS_4.0.py - 4.3.py     # Tuned heuristics variations
-│   ├── AIS_5.0.py - 5.2.py     # Advanced tactical behaviors
-│   ├── AIS_6.0.py              # Pre-final optimized build
-│   └── AIS_7.0.py              # Current apex agent iteration
+│   ├── AIS_2.0.py - 2.1.py     # Rule-based enhancements & Parameter Tuning
+│   ├── AIS_3.0.py              # Ship Calculation and Overkill stopper
+│   ├── AIS_4.0.py - 4.3.py     # Coordinated attack, multi planet targeting, overkill and obstacle avoidance
+│   ├── AIS_5.0.py - 5.2.py     # Baseline extrapolation coefficients
+│   ├── AIS_6.0.py              # Production rate based coefficients
+│   └── AIS_7.0.py              # Adding Model Predictive Control (MPC)
 ├── util/                       # Simulation and debugging suite
 │   ├── play.py                 # Game execution & manual play runner
-│   └── validate.py             # Validation scripts to verify agent logic
+│   └── validate.py             # Validation scripts to check win rate
 ├── ultimate_4way_clash.html    # Interactive HTML local visualizer for matches
 └── requirements.txt            # Python dependencies
 ```
@@ -31,23 +31,23 @@ orbit-wars/
 Clone this repository and ensure you have all mandatory dependencies cooked up by installing the requirements file:
 Bash
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
-    Note: The optimization architecture natively leverages frameworks like Optuna for automated parameter space exploration.
+Note: The optimization architecture natively leverages frameworks like Optuna for automated parameter space exploration.
 
 2. Simulating Matches
 
 To test your agents locally or simulate battles between different script versions, run the match simulator inside the utilities folder:
 Bash
 
-python util/play.py
+    python util/play.py
 
 3. Verification & CI/CD
 
 To ensure your agent logic complies with match constraints and doesn't crash during runtime execution, use the validation script:
 Bash
 
-python util/validate.py
+    python util/validate.py
 
 🧬 Optimization Framework
 
